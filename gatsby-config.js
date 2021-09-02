@@ -8,22 +8,10 @@ module.exports = {
       resolve: "gatsby-source-sanity",
       options: {
         projectId: "vh4r0zrl",
-        dataset: "",
+        dataset: "production",
       },
     },
     "gatsby-plugin-sass",
     "gatsby-plugin-typescript",
-    {
-      resolve: "gatsby-plugin-eslint",
-      options: {
-        test: /\.js$|\.jsx$|\.ts$|\.tsx$/,
-        exclude: /(node_modules|.cache|public)/,
-        stages: ["develop"],
-        options: {
-          emitWarning: true,
-          failOnError: false,
-        },
-      },
-    },
   ],
 };
