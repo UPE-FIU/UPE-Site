@@ -16,7 +16,9 @@
     "type-check": "tsc --noEmit --skipLibCheck",
     "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
     "prettier": "prettier --ignore-path .gitignore -w .",
-    "precommit": "npm run type-check && npm run prettier && npm run lint"
+    "precommit": "npm run type-check && npm run prettier && npm run lint",
+    "sanity-install": "cd sanity-studio && sanity install",
+    "sanity": "cd sanity-studio && sanity start"
   },
   "dependencies": {
     "gatsby": "^3.13.0",
@@ -26,6 +28,7 @@
     "gatsby-source-sanity": "^7.0.7",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "sanity": "^2.14.0",
     "sass": "^1.39.0"
   },
   "devDependencies": {
