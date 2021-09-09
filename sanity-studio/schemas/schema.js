@@ -1,16 +1,63 @@
-// First, we must import the schema creator
 import createSchema from "part:@sanity/base/schema-creator";
-
-// Then import schema types from any plugins that might expose them
 import schemaTypes from "all:part:@sanity/base/schema-type";
 
-// Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
-  // We name our schema
-  name: "default",
-  // Then proceed to concatenate our document type
-  // to the ones provided by any plugins that are installed
+  name: "superSchema",
   types: schemaTypes.concat([
-    /* Your types here! */
+    {
+      title: "Images", //Display Name
+      name: "images", //Query Name
+      type: "document", //What will this hold?
+      fields: [
+        //Columns
+        {
+          title: "Title",
+          name: "title",
+          type: "string",
+        },
+        {
+          title: "Flyer",
+          name: "flyer",
+          type: "image",
+        },
+      ],
+    },
+    {
+      title: "Events",
+      name: "event",
+      type: "document",
+      fields: [
+        //Columns
+        {
+          title: "Event Title",
+          name: "title",
+          type: "string",
+        },
+        {
+          title: "Event Description",
+          name: "description",
+          type: "string",
+        },
+        {
+          title: "Flyer",
+          name: "flyer",
+          type: "reference",
+          to: [{ type: "images" }],
+        },
+        {
+          title: "Program Category",
+          name: "category",
+          type: "string",
+          options: {
+            list: [
+              { title: "Code", value: "upe_code" },
+              { title: "Design", value: "upe_design" },
+              { title: "InfoTech", value: "upe_infotech" },
+              { title: "Make", value: "upe_make" },
+            ],
+          },
+        },
+      ],
+    },
   ]),
 });
