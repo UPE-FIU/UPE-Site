@@ -1,0 +1,83 @@
+.sectionContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(90deg, #fdcf0c, #f89b21);
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52em;
+    width: 100em;
+    padding-right: 5em;
+}
+
+.mainHeader {
+    color: white;
+    font-weight: 900;
+    height: 50px;
+    font-family: ‘Poppins’, sans-serif;
+    text-transform: none;
+    letter-spacing: 1px;
+    border-color: #e1e1e1;
+    font-size: 34px;
+    line-height: 1.1em;
+    margin-bottom: 14px;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center;
+}
+
+.mainSubheader {
+    color: white;
+    text-align: center;
+    border-color: #e1e1e1;
+    margin: 0.85em 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    font-weight: bold;
+}
+
+.wave {
+    pointer-events: none;
+    user-select: none;
+    flex-grow: 10;
+    margin-top: -30px;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    vertical-align: baseline;
+}
+
+.splash {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60em;
+    max-width: 80%;
+}
+
+.headerContainer  {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    vertical-align: baseline;
+    width: 36em;
+    min-width: 36em;
+}
+
+button {
+    font-family: ‘Poppins’, sans-serif;
+}
+
+.buttonsContainer {
+    display: flex;
+    justify-content: center;
+}
+  
