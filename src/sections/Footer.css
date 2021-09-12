@@ -1,0 +1,20 @@
+  html {
+    font-family: ‘Poppins’, sans-serif;
+  }
+
+  footer {
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    background-image: linear-gradient(90deg, #fdcf0c, #f89b21);
+  }
+
+  .wave {
+    margin-bottom: -50px;
+  }
+  
+  footer p {
+    font-family: ‘Poppins’, sans-serif;
+    color: white;
+  }

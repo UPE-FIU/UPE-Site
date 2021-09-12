@@ -1,3 +1,4 @@
+import Footer from "../sections/Footer";
 import * as React from "react";
 import PageHero from "../sections/PageHero";
 
@@ -6,6 +7,7 @@ const Home: React.ReactNode = () => {
     <main>
       <title>Home Page</title>
       <PageHero/>
+      <Footer/>
     </main>
   );
 };
