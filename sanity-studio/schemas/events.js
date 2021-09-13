@@ -1,3 +1,7 @@
+import createSchema from "part:@sanity/base/schema-creator";
+import schemaTypes from "all:part:@sanity/base/schema-type";
+import richText from "./richText";
+
 export default{
     title: "Events",
     name: "event",
@@ -5,24 +9,20 @@ export default{
     fields: [
       //Columns
       {
-        title: "Event Title",
-        name: "title",
+        title: "Event Name",
+        name: "name",
         type: "string",
       },
       {
         title: "Event Description",
         name: "description",
-        type: "string",
+        type: "richText",
       },
       {
         title: 'Event Link',
         name: 'link',
         type: 'reference',
-        to:[
-            {
-                type: "links",
-            },
-        ],
+        to:[{type: "links"}],
       },
       {
         title: "Flyer",
@@ -45,3 +45,4 @@ export default{
       },
     ],
   }
+
