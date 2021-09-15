@@ -14,11 +14,15 @@
     padding-right: 5em;
 }
 
+.mainHomeButton {
+    margin: 8px;
+}
+
 .mainHeader {
     color: white;
     font-weight: 900;
     height: 50px;
-    font-family: ‘Poppins’, sans-serif;
+    font-family: "Poppins";
     text-transform: none;
     letter-spacing: 1px;
     border-color: #e1e1e1;

@@ -1,5 +1,6 @@
 import React from "react";
 import Splash from "../images/hero_splash.png";
+import {mainHeader, mainSubHeader, events, discord} from "../constants/Strings";
 import "./PageHero.css";
 
 function Banner() {
@@ -11,14 +12,13 @@ function Banner() {
                         <img className={"splash"} src={Splash} alt="Our Community"/>
                     </div>
                     <div className={"headerContainer"}>
-                        <h1 className={"mainHeader"}>Join the Leading Student Tech Community in Miami!</h1>
+                        <h1 className={"mainHeader"}>{mainHeader}</h1>
                         <p className={"mainSubheader"}> 
-                            A large tech-based community that aims to provide every student with the opportunity to develop professionally and technically. 
-                            All majors and skill levels are welcomed!
+                            {mainSubHeader}
                         </p>
                         <div className={"buttonsContainer"}>
-                            <button> Events </button>
-                            <button> Discord </button>
+                            <button className={"mainHomeButton"}> {events} </button>
+                            <button className={"mainHomeButton"}> {discord} </button>
                         </div>
                     </div>
                 </div>
