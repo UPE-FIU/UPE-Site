@@ -1,0 +1,126 @@
+/*
+    
+    Theme Implementation:
+
+    In order to correctly implement a new theme color, you must implement the contrast, dark, and light variants for both the dark and light attribute themes. 
+    Then you must add a new enum value to the ColorPalette enum.
+    In order to implement a new theme gradient, you do the same but implement a new enum value to the Gradient enum.
+
+    Theme Naming Convention:
+
+    // General colors
+    Normal colors follow the convention "--[Variable Name]-color".
+    Dark color variants follow the convention "--[Variable Name]-color-dark".
+    Light color variants follow the convention "--[Variable Name]-color-light".
+    Contrast colors follow the convention "--[Variable Name]-color-contrast".
+
+    // Gradient colors
+    Gradient colors follow the convention "--[Variable Name]-color-gradient".
+    Dark gradient color variants follow the convention "--[Variable Name]-color-gradient-dark".
+    Light gradient color variants follow the convention "--[Variable Name]-color-gradient-light".
+    Contrast gradient colors follow the convention "--[Variable Name]-color-gradient-contrast".
+
+*/
+
+// Light Theme
+:root[theme="light"] {
+  --background-color: hsl(0, 0%, 100%);
+
+  // Normal
+  --primary-color: hsl(49, 98%, 52%);
+  --accent-color: hsl(0, 0%, 100%);
+  --warning-color: hsl(0, 100%, 50%);
+
+  // Dark
+  --primary-color-dark: hsl(49, 98%, 42%);
+  --accent-color-dark: hsl(0, 0%, 90%);
+  --warning-color-dark: hsl(0, 100%, 40%);
+
+  // Light
+  --primary-color-light: hsl(49, 98%, 62%);
+  --accent-color-light: hsl(0, 0%, 100%);
+  --warning-color-light: hsl(0, 100%, 60%);
+
+  // Gradients
+  --primary-color-gradient: linear-gradient(
+    90deg,
+    hsl(49, 98%, 52%),
+    hsl(34, 94%, 55%)
+  );
+
+  // Gradients Dark
+  --primary-color-gradient-dark: linear-gradient(
+    90deg,
+    hsl(49, 98%, 42%),
+    hsl(34, 94%, 45%)
+  );
+
+  // Gradients Light
+  --primary-color-gradient-light: linear-gradient(
+    90deg,
+    hsl(49, 98%, 62%),
+    hsl(34, 94%, 65%)
+  );
+
+  // Contrast
+  --primary-color-contrast: var(--primary-color-dark);
+  --accent-color-contrast: var(--accent-color-dark);
+  --warning-color-contrast: var(--warning-color-dark);
+  --primary-color-gradient-contrast: var(--primary-color-gradient-dark);
+}
+
+// Dark theme
+:root[theme="dark"] {
+  --background-color: hsl(0, 0%, 13%);
+
+  // Normal
+  --primary-color: hsl(49, 98%, 52%);
+  --accent-color: hsl(0, 0%, 13%);
+  --warning-color: hsl(0, 100%, 50%);
+
+  // Dark
+  --primary-color-dark: hsl(49, 98%, 42%);
+  --accent-color-dark: hsl(0, 0%, 3%);
+  --warning-color-dark: hsl(0, 100%, 40%);
+
+  // Light
+  --primary-color-light: hsl(49, 98%, 62%);
+  --accent-color-light: hsl(0, 0%, 23%);
+  --warning-color-light: hsl(0, 100%, 60%);
+
+  // Gradients
+  --primary-color-gradient: linear-gradient(
+    90deg,
+    hsl(49, 98%, 52%),
+    hsl(34, 94%, 55%)
+  );
+
+  // Gradients Dark
+  --primary-color-gradient-dark: linear-gradient(
+    90deg,
+    hsl(49, 98%, 42%),
+    hsl(34, 94%, 45%)
+  );
+
+  // Gradients Light
+  --primary-color-gradient-light: linear-gradient(
+    90deg,
+    hsl(49, 98%, 62%),
+    hsl(34, 94%, 65%)
+  );
+
+  // Contrast
+  --primary-color-contrast: var(--primary-color-light);
+  --accent-color-contrast: var(--accent-color-light);
+  --warning-color-contrast: var(--warning-color-light);
+  --primary-color-gradient-contrast: var(--primary-color-gradient-light);
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 1.25vw;
+  background-color: var(--background-color);
+}

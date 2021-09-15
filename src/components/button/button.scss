@@ -1,0 +1,56 @@
+@import "../../styles/styles.scss";
+
+.button {
+  display: block;
+  position: relative;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  margin: 0;
+  padding: 5% 10%;
+  border: none;
+  border-radius: 10vw;
+  text-align: center;
+  font-weight: 900;
+  cursor: pointer;
+  white-space: nowrap;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  text-decoration: none;
+
+  z-index: 100;
+
+  transition: transform 0.5s;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+    border-radius: inherit;
+
+    background-color: var(--on-hover-background-color) !important;
+    background-image: var(--on-hover-background-image) !important;
+
+    transition: opacity 0.15s;
+  }
+
+  &:hover {
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  &.pressed {
+    transform: translate(0, 0.5vh);
+  }
+}
