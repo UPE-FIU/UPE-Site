@@ -11,14 +11,16 @@ function Banner() {
                     <div className={"imageContainer"}>
                         <img className={"splash"} src={Splash} alt="Our Community"/>
                     </div>
-                    <div className={"headerContainer"}>
-                        <h1 className={"mainHeader"}>{mainHeader}</h1>
-                        <p className={"mainSubheader"}> 
-                            {mainSubHeader}
-                        </p>
-                        <div className={"buttonsContainer"}>
-                            <button className={"mainHomeButton"}> {events} </button>
-                            <button className={"mainHomeButton"}> {discord} </button>
+                    <div className={"captionContainer"}>
+                        <div className={"headerContainer"}>
+                            <h1 className={"mainHeader"}>{mainHeader}</h1>
+                            <p className={"mainSubheader"}> 
+                                {mainSubHeader}
+                            </p>
+                            <div className={"buttonsContainer"}>
+                                <button className={"mainHomeButton"}> {events} </button>
+                                <button className={"mainHomeButton"}> {discord} </button>
+                            </div>
                         </div>
                     </div>
                 </div>

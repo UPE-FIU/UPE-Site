@@ -10,9 +10,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 52em;
-    width: 100em;
-    padding-right: 5em;
+    height: 100vh;
+    width: 115em;
+    padding: 0em 2em;
 }
 
 .mainHomeButton {
@@ -60,13 +60,20 @@
     flex-direction: column;
     vertical-align: middle;
     align-items: center;
+    width: 100%;
 }
 
 .splash {
-    margin-left: auto;
-    margin-right: auto;
     width: 100%;
-    max-width: 80%;
+}
+
+.captionContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    vertical-align: middle;
+    align-items: center;
+    width: 100%;
 }
 
 .headerContainer  {
@@ -83,12 +90,12 @@ button {
 }
 
 .buttonsContainer {
-    margin-bottom: 128px;
+    margin-bottom: 40px;
     display: flex;
     justify-content: center;
 }
   
-@media (max-width: 1200px) {
+@media (max-width: 1080px) {
     .banner {
         flex-direction: column;
         align-items: center;
