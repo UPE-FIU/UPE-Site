@@ -10,9 +10,11 @@
   }
 
   .copyright {
-    text-align: left;
+    text-align: right;
     bottom: 0;
-    width: max-content;
+    font-weight: 100;
+    font-size: 12px;
+    max-width: 100vw;
   }
 
   .wave {
@@ -40,4 +42,10 @@
   max-width: 75px;
   min-width: 40px;
   margin: 12px;
+}
+
+@media (max-width: 1080px) {
+  .copyright {
+    text-align: center;
+  }
 }
