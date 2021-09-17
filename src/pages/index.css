@@ -1,0 +1,9 @@
+html {
+    font-family: "Poppins";
+    font-weight: 900;
+} 
+
+html, body {   
+    height: 100%;
+    margin: 0; 
+}
