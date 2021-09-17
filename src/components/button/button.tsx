@@ -19,19 +19,32 @@ export type TextColor = ColorPalette | CSS.Property.Color;
 export type ContrastColor = Contrast | CSS.Property.BackgroundColor;
 
 //  TextButton input properties
-export interface TextButtonProp extends React.HTMLAttributes<any> {
-  text: string; // Required | Content of the button. Accepts a string value.
-  backgroundColor?: BackgroundColor; // Optional (default: ColorPalette.Primary) | Background color of the button. Accepts a ColorPalette enum value or a CSS background color value.
-  backgroundImage?: BackgroundImage; // Optional (default: undefined) | Background image of the button. Accepts a Gradient enum value or a CSS background image value.
-  textColor?: TextColor; // Optional (default: ColorPalette.Accent) | Text color of the button. Accepts a ColorPalette enum value or a CSS color value.
-  onHoverContrastColor?: ContrastColor; // Optional (default: Contrast.Default) | Color of the background on hover. Accepts a Contrast enum value or a CSS background color value.
-  href?: string; // Optional | URL to redirect to. Accepts a string value.
-  onClick?: (event: MouseEvent) => void; // Optional | Callback function to execute when the button is clicked. Accepts a void function with a MouseEvent parameter.
+export interface TextButtonProp extends React.HTMLAttributes<HTMLDivElement> {
+  // Required | Content of the button. Accepts a string value.
+  text: string;
+
+  // Optional (default: ColorPalette.Primary) | Background color of the button. Accepts a ColorPalette enum value or a CSS background color value.
+  backgroundColor?: BackgroundColor;
+
+  // Optional (default: undefined) | Background image of the button. Accepts a Gradient enum value or a CSS background image value.
+  backgroundImage?: BackgroundImage;
+
+  // Optional (default: ColorPalette.Accent) | Text color of the button. Accepts a ColorPalette enum value or a CSS color value.
+  textColor?: TextColor;
+
+  // Optional (default: Contrast.Default) | Color of the background on hover. Accepts a Contrast enum value or a CSS background color value.
+  onHoverContrastColor?: ContrastColor;
+
+  // Optional | URL to redirect to. Accepts a string value.
+  href?: string;
+
+  // Optional | Callback function to execute when the button is clicked. Accepts a void function with a MouseEvent parameter.
+  onClick?: (event: MouseEvent) => void;
 }
 
 interface Properties extends CSS.Properties {
-  "--on-hover-background-color"?: any;
-  "--on-hover-background-image"?: any;
+  "--on-hover-background-color"?: CSS.Property.BackgroundColor;
+  "--on-hover-background-image"?: CSS.Property.BackgroundImage;
 }
 
 //  Handle various cases of input properties for a TextColor
@@ -93,9 +106,9 @@ const handleContrastColorImage = (
 };
 
 //  TextButton Component
-export const TextButton = (props: TextButtonProp) => {
+export const TextButton = (props: TextButtonProp): JSX.Element => {
   const style: Properties = {};
-  let computedBackgroundColor: BackgroundColor =
+  const computedBackgroundColor: BackgroundColor =
     props.backgroundColor ?? ColorPalette.Primary;
 
   if (props.backgroundImage === undefined) {
@@ -135,8 +148,8 @@ export const TextButton = (props: TextButtonProp) => {
     );
   }
 
-  let mouseDown: boolean = false;
-  let transitionFinished: boolean = false;
+  let mouseDown: boolean;
+  let transitionFinished: boolean;
   let button: HTMLDivElement;
 
   const onMouseDown = (mouseEvent: MouseEvent) => {

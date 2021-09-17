@@ -35,7 +35,7 @@ export const getColorPaletteComplement = (
 };
 
 // Return the complement of a Contrast value
-export const getContrastComplement = (contrast: Contrast) => {
+export const getContrastComplement = (contrast: Contrast): Contrast => {
   switch (contrast) {
     case Contrast.Dark:
       return Contrast.Light;
