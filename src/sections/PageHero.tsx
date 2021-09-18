@@ -1,7 +1,9 @@
 import React from "react";
 import Splash from "../images/hero_splash.png";
 import {mainHeader, mainSubHeader, events, discord} from "../constants/Strings";
-import "./PageHero.css";
+import {TextButton} from "../components/button/button"
+import {Gradient, ColorPalette} from "../types/theme"
+import "./PageHero.scss";
 
 function Banner() {
     return (
@@ -18,8 +20,12 @@ function Banner() {
                                 {mainSubHeader}
                             </p>
                             <div className={"buttonsContainer"}>
-                                <button className={"mainHomeButton"}> {events} </button>
-                                <button className={"mainHomeButton"}> {discord} </button>
+                                <div className={"homeEventButton"}> 
+                                    <TextButton  text={"Events"} backgroundColor={ColorPalette.Accent}/>
+                                </div>
+                                <div className={"homeDiscordButton"}>
+                                    <TextButton  text={"Discord"} backgroundColor={ColorPalette.Accent}/>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -4,7 +4,7 @@ import InstagramIcon from "../images/instagram.svg";
 import LinkedInIcon from "../images/linkedin.svg";
 import TwitterIcon from "../images/twitter.svg";
 import React from "react";
-import "./Footer.css";
+import "./Footer.scss";
 
 function Footer() {
   const year = new Date().getFullYear();
