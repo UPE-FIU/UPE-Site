@@ -1,5 +1,6 @@
   h1, h2 {
     font-weight: 900;
+    font-size: 3.2rem;
     text-align: center;
     width: 100%;
     color:white;
@@ -9,11 +10,16 @@
     background-image: linear-gradient(90deg, #fdcf0c, #f89b21);
   }
 
+  .socialMediaIconTitle {
+    font-size: 3.2rem;
+
+  }
+
   .copyright {
     text-align: right;
     bottom: 0;
     font-weight: 100;
-    font-size: 12px;
+    font-size: 1.6rem;
     max-width: 100vw;
   }
 

@@ -28,7 +28,7 @@ function Footer() {
           <a href="https://www.linkedin.com/company/upe-fiu"><img className={"socialMediaIcon"} src={LinkedInIcon} alt="Our Community"/></a>
           <a href="https://twitter.com/upefiu"><img className={"socialMediaIcon"} src={TwitterIcon} alt="Our Community"/></a>
         </div>
-        <h2>Questions? <a className={"contactUsTitle"}href="mailto:upe@fiu.edu?Subject=...Question%20regarding%20UPE!">Contact Us</a>!</h2>
+        <h1>Questions? <a className={"contactUsTitle"}href="mailto:upe@fiu.edu?Subject=...Question%20regarding%20UPE!">Contact Us</a>!</h1>
         <p className={"copyright"}>ⓒ Copyright {year} - Upsilon Pi Epsilon at Florida International University</p>
       </footer>
     </div>

@@ -21,25 +21,25 @@
 
 .mainHeader {
     color: white;
-    font-size: 3.2rem;
+    font-size: 4.8rem;
     letter-spacing: 1px;
     border-color: #e1e1e1;
     margin-bottom: 14px;
     text-align: center;
-    width: 60%;
-    min-width: 500px;
+    width: 80%;
+    min-width: 720px;
 }
 
 .mainSubheader {
     color: white;
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     text-align: center;
     border-color: #e1e1e1;
     margin: 16px;
     vertical-align: baseline;
     font-weight: bold;
     width: 80%;
-    min-width: 420px;
+    min-width: 556px;
     max-width: 600px;
 
 }
