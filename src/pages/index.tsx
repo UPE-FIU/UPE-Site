@@ -3,14 +3,13 @@ import * as React from "react";
 import PageHero from "../sections/PageHero";
 
 const Home: React.ReactNode = () => {
-
   document.documentElement.setAttribute("theme", "light");
-  
+
   return (
     <main>
       <title>Home Page</title>
-      <PageHero/>
-      <Footer/>
+      <PageHero />
+      <Footer />
     </main>
   );
 };

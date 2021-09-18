@@ -1,41 +1,40 @@
-  h1, h2 {
-    font-weight: 900;
-    font-size: 3.2rem;
-    text-align: center;
-    width: 100%;
-    color:white;
-  }
-  
-  footer {
-    background-image: linear-gradient(90deg, #fdcf0c, #f89b21);
-    height: 100%;
-  }
+h1,
+h2 {
+  font-weight: 900;
+  font-size: 3.2rem;
+  text-align: center;
+  width: 100%;
+  color: white;
+}
 
-  .socialMediaIconTitle {
-    font-size: 3.2rem;
+footer {
+  background-image: linear-gradient(90deg, #fdcf0c, #f89b21);
+}
 
-  }
+.socialMediaIconTitle {
+  font-size: 3.2rem;
+}
 
-  .copyright {
-    text-align: right;
-    bottom: 0;
-    font-weight: 100;
-    font-size: 1.6rem;
-    max-width: 100vw;
-  }
+.copyright {
+  text-align: right;
+  bottom: 0;
+  font-weight: 100;
+  font-size: 1.6rem;
+  max-width: 100vw;
+}
 
-  .wave {
-    margin-bottom: -50px;
-  }
-  
-  footer p {
-    font-size: 12px;
-    color: rgba(255, 255, 255, 0.75);
-    padding: 32px;
-  }
+footer p {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.75);
+  padding: 32px;
+}
 
 .contactUsTitle {
-  color:white;
+  color: white;
+}
+
+.socialMediaTitle {
+  margin-top: 0;
 }
 
 .socialMediaIconContainer {
@@ -57,13 +56,13 @@
   }
 }
 
-    
 @media (max-width: 500px) {
-  h1, h2 {
+  h1,
+  h2 {
     font-size: 2.4rem;
   }
 
   .copyright {
-    font-size: 1.0rem;
+    font-size: 1rem;
   }
 }
