@@ -11,7 +11,7 @@ import { ColorPalette } from "../types/theme";
 import BackgroundWave from "../components/BackgroundWave/BackgroundWave";
 import "./PageHero.scss";
 
-const Banner: React.FC = () => {
+const PageHero: React.FC = () => {
   return (
     <div>
       <div className={"sectionContainer"}>
@@ -46,4 +46,4 @@ const Banner: React.FC = () => {
   );
 };
 
-export default Banner;
+export default PageHero;
