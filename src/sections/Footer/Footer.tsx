@@ -1,6 +1,6 @@
 import BackgroundWave from "../../components/BackgroundWave/BackgroundWave";
-import SocialMediaButton from "../../components/SocialMediaButtons/SocialMediaButton";
-import { SocialMediaPlatforms } from "../../components/SocialMediaButtons/SocialMediaButton";
+import SocialMediaButton from "../../components/SocialMediaButton/SocialMediaButton";
+import { SocialMediaPlatforms } from "../../components/SocialMediaButton/SocialMediaButton";
 import React from "react";
 import "./Footer.scss";
 
