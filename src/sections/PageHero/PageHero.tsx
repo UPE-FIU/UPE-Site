@@ -1,14 +1,14 @@
 import React from "react";
-import Splash from "../images/hero_splash.png";
+import Splash from "../../images/hero_splash.png";
 import {
   mainHeaderText,
   mainSubHeaderText,
   eventsText,
   discordText,
-} from "../constants/Strings";
-import { TextButton } from "../components/TextButton/TextButton";
-import { ColorPalette } from "../types/theme";
-import BackgroundWave from "../components/BackgroundWave/BackgroundWave";
+} from "../../constants/Strings";
+import { TextButton } from "../../components/TextButton/TextButton";
+import { ColorPalette } from "../../types/theme";
+import BackgroundWave from "../../components/BackgroundWave/BackgroundWave";
 import "./PageHero.scss";
 
 const PageHero: React.FC = () => {

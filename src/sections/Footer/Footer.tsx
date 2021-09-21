@@ -1,9 +1,6 @@
-import BackgroundWave from "../components/BackgroundWave/BackgroundWave";
-import DiscordButton from "../components/SocialMediaButtons/DiscordButton/DiscordButton";
-import FacebookButton from "../components/SocialMediaButtons/FacebookButton/FacebookButton";
-import InstagramButton from "../components/SocialMediaButtons/InstagramButton/InstagramButton";
-import LinkedInButton from "../components/SocialMediaButtons/LinkedInButton/LinkedInButton";
-import TwitterButton from "../components/SocialMediaButtons/TwitterButton/TwitterButton";
+import BackgroundWave from "../../components/BackgroundWave/BackgroundWave";
+import SocialMediaButton from "../../components/SocialMediaButtons/SocialMediaButton";
+import { SocialMediaPlatforms } from "../../components/SocialMediaButtons/SocialMediaButton";
 import React from "react";
 import "./Footer.scss";
 
@@ -15,11 +12,11 @@ function Footer() {
       <footer>
         <h1 className={"socialMediaTitle"}>Join the Community!</h1>
         <div className={"socialMediaIconContainer"}>
-          <DiscordButton />
-          <LinkedInButton />
-          <InstagramButton />
-          <FacebookButton />
-          <TwitterButton />
+          <SocialMediaButton destination={SocialMediaPlatforms.Discord}/>
+          <SocialMediaButton destination={SocialMediaPlatforms.LinkedIn}/>
+          <SocialMediaButton destination={SocialMediaPlatforms.Instagram}/>
+          <SocialMediaButton destination={SocialMediaPlatforms.Facebook}/>
+          <SocialMediaButton destination={SocialMediaPlatforms.Twitter}/>
         </div>
         <h1>
           Questions?{" "}

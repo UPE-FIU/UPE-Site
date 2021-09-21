@@ -1,6 +1,6 @@
-import Footer from "../sections/Footer";
+import Footer from "../sections/Footer/Footer";
 import * as React from "react";
-import PageHero from "../sections/PageHero";
+import PageHero from "../sections/PageHero/PageHero";
 
 const Home: React.ReactNode = () => {
   document.documentElement.setAttribute("theme", "light");
