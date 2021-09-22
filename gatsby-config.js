@@ -11,6 +11,13 @@ module.exports = {
         dataset: "production",
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Poppins\:300,400,700,900`, `source sans pro\:300,400,700,900`],
+        display: "swap",
+      },
+    },
     "gatsby-plugin-sass",
     "gatsby-plugin-typescript",
   ],

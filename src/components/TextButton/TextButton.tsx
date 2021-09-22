@@ -10,7 +10,7 @@ import {
   isGradient,
 } from "../../types/theme";
 import * as CSS from "csstype";
-import "./button.scss";
+import "./TextButton.scss";
 
 // Shorthand property types
 export type BackgroundColor = ColorPalette | CSS.Property.BackgroundColor;
