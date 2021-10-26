@@ -1,0 +1,49 @@
+.aboutUsSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.aboutUsText {
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.aboutUsTitle h1 {
+  font-size: 4.5rem;
+  color: #f89b21;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+
+.aboutUsDescription {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: rgb(110, 110, 110);
+  display: inline-block;
+  flex-direction: column;
+  width: 85%;
+  height: auto;
+  text-align: center;
+}
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+img {
+  width: 650px;
+  display: flex;
+  float: right;
+  justify-content: center;
+  flex-direction: column;
+  vertical-align: baseline;
+}
